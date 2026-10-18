@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Thaís & Edilson - 20.04.27</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Great+Vibes&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:#e8e0d3; display:flex; justify-content:center; font-family:'Cormorant Garamond', serif;}
+  .container{width:390px; background:#f6f1eb; position:relative; overflow:hidden; box-shadow:0 20px 50px rgba(0,0,0,0.25)}
+  
+  /* CAPA */
+  .envelope{height:100vh; background:#6b7a5b; display:flex; flex-direction:column; justify-content:center; align-items:center; position:absolute; top:0; left:0; width:100%; z-index:20; transition:transform 0.8s; cursor:pointer;}
+  .envelope.open{transform:translateY(-100%)}
+  .wax{width:115px; height:115px; background:radial-gradient(#f0d68a, #c19a45); border-radius:50%; display:flex; justify-content:center; align-items:center; font-size:38px; font-family:'Great Vibes'; color:#4a3510; box-shadow:0 6px 15px rgba(0,0,0,0.35);}
+  .names-envelope{margin-top:22px; font-family:'Great Vibes'; font-size:38px; color:#fff8e7}
+  .date-envelope{font-size:20px; color:#fff8e7; letter-spacing:4px; margin-top:6px}
+
+  /* CONTEÚDO */
+  .content{padding:45px 0 35px; text-align:center; background:#f6f1eb}
+  .save{font-family:'Great Vibes'; font-size:56px; color:#b89b6a; margin-bottom:20px}
+  
+  .photos{position:relative; width:100%;}
+  .photo-wrap{position:relative; width:100%; height:280px; overflow:hidden;}
+  .photo-wrap img{width:100%; height:100%; object-fit:cover;}
+
+  /* A NUVEM BRANCA QUE SEPARA - IGUAL DO VÍDEO */
+  .nuvem-separadora{
+    position:absolute; bottom:-1px; left:0; width:100%; height:65px;
+    z-index:5; background:transparent;
+  }
+  .nuvem-separadora svg{width:100%; height:100%; display:block;}
+  
+  .photo-wrap2{margin-top:-1px}
+  .photo-wrap3{margin-top:-1px}
+
+  .date-vertical{position:absolute; right:8px; top:15px; writing-mode:vertical-rl; letter-spacing:7px; font-size:15px; color:#fff; z-index:6; text-shadow:0 1px 4px rgba(0,0,0,0.4)}
+
+  /* MENSAGEM PARA OS CONVIDADOS */
+  .mensagem{padding:35px 30px 10px; font-size:16px; line-height:1.7; color:#6b5a4a; font-style:italic;}
+  .mensagem strong{font-style:normal; color:#5a4a3a; display:block; margin-bottom:8px; font-size:18px; letter-spacing:1px}
+
+  .couple{margin-top:25px; letter-spacing:6px; font-size:20px; color:#5a4a3a}
+  .countdown{display:flex; justify-content:center; gap:10px; margin-top:20px; padding:0 20px}
+  .box{border:1px solid #c9b8a0; width:70px; padding:13px 0; background:rgba(255,255,255,0.6)}
+  .box b{font-size:24px; display:block; color:#5a4a3a}
+  .box span{font-size:10px; letter-spacing:2px; color:#8a7a6a}
+  .footer{margin-top:30px; font-size:15px; color:#8a7a6a; font-style:italic}
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="envelope" onclick="this.classList.add('open')">
+    <div class="wax">T&E</div>
+    <div class="names-envelope">Thais & Edilson</div>
+    <div class="date-envelope">20.04.27</div>
+    <div style="margin-top:25px; font-size:11px; color:#fff8e7; letter-spacing:3px">TOQUE PARA ABRIR</div>
+  </div>
+
+  <div class="content">
+    <div class="save">Save the Date</div>
+    
+    <div class="photos">
+      <!-- FOTO 1 -->
+      <div class="photo-wrap">
+        <div class="date-vertical">20 . 04 . 27</div>
+        <img src="IMG_9865.jpeg" alt="Foto 1">
+        <!-- NUVEM -->
+        <div class="nuvem-separadora">
+          <svg viewBox="0 0 400 65" preserveAspectRatio="none">
+            <path d="M0,30 Q20,5 40,30 T80,35 T120,20 T160,30 T200,25 T240,30 T280,18 T320,30 T360,28 T400,30 L400,65 L0,65 Z" fill="#f6f1eb"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- FOTO 2 -->
+      <div class="photo-wrap photo-wrap2">
+        <img src="IMG_9866.jpeg" alt="Foto 2">
+        <div class="nuvem-separadora">
+          <svg viewBox="0 0 400 65" preserveAspectRatio="none">
+            <path d="M0,25 Q30,45 60,25 T110,30 T160,15 T210,28 T260,22 T310,32 T350,20 T400,28 L400,65 L0,65 Z" fill="#f6f1eb"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- FOTO 3 -->
+      <div class="photo-wrap photo-wrap3">
+        <img src="IMG_9864.jpeg" alt="Foto 3">
+      </div>
+    </div>
+
+    <!-- MENSAGEM ANTES DA CONTAGEM -->
+    <div class="mensagem">
+      <strong>Queridos familiares e amigos,</strong>
+      O amor nos encontrou, nos transformou e agora queremos eternizar.
+      É com o coração cheio de alegria que convidamos vocês para reservarem esta data tão especial para nós. A vossa presença tornará o nosso dia ainda mais inesquecível!
+    </div>
+
+    <div class="couple">THAIS & EDILSON</div>
+    
+    <div class="countdown">
+      <div class="box"><b id="dias">0</b><span>DIAS</span></div>
+      <div class="box"><b id="horas">0</b><span>HORAS</span></div>
+      <div class="box"><b id="min">0</b><span>MIN</span></div>
+      <div class="box"><b id="seg">0</b><span>SEG</span></div>
+    </div>
+
+    <div class="footer">Reserve esta data para o nosso dia</div>
+  </div>
+</div>
+
+<script>
+  const target = new Date("2027-04-20T00:00:00").getTime();
+  setInterval(()=>{
+    const diff = target - new Date().getTime();
+    document.getElementById('dias').innerText = Math.floor(diff / (1000*60*60*24));
+    document.getElementById('horas').innerText = Math.floor((diff % (1000*60*60*24)) / (1000*60*60));
+    document.getElementById('min').innerText = Math.floor((diff % (1000*60*60)) / (1000*60));
+    document.getElementById('seg').innerText = Math.floor((diff % (1000*60)) / 1000);
+  },1000)
+</script>
+</body>
+</html>
